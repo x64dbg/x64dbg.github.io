@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Advent+Pro);
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
 body, html{ width:100%; height:100%; padding: 0; margin: 0;}
- body {
+body,section {
     background: url(img/body.png) repeat;
 }
 h1,
@@ -38,6 +38,28 @@ a:hover {
     color: #d4edf9;
     text-decoration: none;
 }
+section{
+padding-top: 60px;
+
+}
+.carousel-indicators {
+ 
+  bottom: 0px;
+  left: 90%;
+  
+}
+.shine{ color:#08ff25; margin-right: 10px;}
+.yes{ color:#08ff25; }
+.no{color:red;}
+h1,h2,.plugins h3{color:#4cb4e8;}
+.title {
+    /* Shadows are visible under slightly transparent text color */
+    font-size: 8em;
+    color:#4cb4e8;
+    text-shadow: 0px 2px 3px #000;
+}
+.plugins a{float:right; margin-right:10%;}
+
 /* line 44, ../_sass/_base.scss */
 
 h1 small,
@@ -113,7 +135,7 @@ h6 small {
 .navbar-default .navbar-nav > li > a:active {
     color: #fff;
 }
-.jumbotron {
+.dark {
     background: rgba(0, 0, 0, 0.298039);
     -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
     -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
@@ -125,9 +147,7 @@ h6 small {
     color: #fff;
     background-color: transparent;
     border-color: rgb(53, 126, 189);
-    -webkit-animation-name: pulse2;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
+
 }
 .btn-primary:hover {
     background-color: rgba(53, 126, 189, 0.8)
@@ -142,11 +162,13 @@ h6 small {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
     -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
-    -webkit-animation-name: pulse;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
     outline: none;
     cursor: pointer;
+}
+.blink{
+    -webkit-animation-name: pulse2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes pulse {
     0% {
@@ -180,8 +202,9 @@ h6 small {
     text-align: justify;
     bottom: 0;
     background-color: black;
-    opacity: .7;
-    filter: alpha(opacity=70);
+    opacity: .8;
+    filter: alpha(opacity=80);
+
     
 }
 .carousel-caption h3 {
@@ -194,7 +217,5 @@ h6 small {
     column-count: 2;
 }
 
-.screen{height:100% !important;min-height:100% !important;  }
-.fix{padding-top:10%;}
-.part{height:50%!important;min-height:50%!important;}
+
 h2{margin-bottom:15px;}
