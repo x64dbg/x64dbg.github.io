@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="custom.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="screen">
+        <a name="top"></a>
+
+        <header id="heading">
+
+            <div class="navbar, mymenu navbar-default navbar-fixed-top">
+
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">x64dbg</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li>
+                                <a href="/index/index/">Start</a>
+                            </li>
+                            <li>
+                                <a href="/tutorials/index/">Highlights</a>
+                            </li>
+                            <li>
+                                <a href="/documentation/index/">Features</a>
+                            </li>
+                            <li>
+                                <a href="/credits/index/">Plugins</a>
+                            </li>
+                            <li>
+                                <a href="/faq/index/">Credits</a>
+                            </li>
+                            <li>
+                                <a href="/showcases/index/">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="/touch/index/">Get in Touch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron" style="height:100%;">
+            <div class="fix"></div>
+            <div class="container">
+                <div style="float:left; width:35%;">
+                    <h1>x64dbg</h1>
+                    <p>an open-source x64/x32 debugger</p>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="https://sf.net/projects/x64dbg/" target="_blank" role="button">download NOW &raquo;</a>
+                    </p>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide" style="width:60%; float:right;" data-ride="carousel">
+                    <!-- Indicators -->
+                    <!--
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+-->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/slide2.png" alt="img/slide2.png">
+                            <div class="carousel-caption">
+                                Test
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/slide2.png" alt="img/slide2.png">
+                            <div class="carousel-caption">
+                                Test2
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <a name="overview"></a>
+        <div class="fix"></div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <h2>
+                    <a name="overview"></a>Overview</h2>
+                This is a x64/x32 debugger that is currently in active development. The debugger has (currently) three parts:
+
+                <ul>
+                    <li>DBG</li>
+                    <li>GUI</li>
+                    <li>Bridge</li>
+                </ul>
+
+                <p>DBG is the debugging part of the debugger. It handles debugging (using TitanEngine) and will provide data for the GUI. GUI is the graphical part of the debugger. It is built on top of Qt and it provides the user interaction, the dump window, the disassembly, the register window, the memory map view, the log view etc. Bridge is the communication library for the DBG and GUI part (and maybe in the future more parts). The bridge can be used to work on new features, without having to update the code of the other parts. It also ensures low-level code stays (partially separated from the high level GUI code).</p>
+            </div>
+            <div class="row" style="margin-top:5%;">
+
+                <div class="col-md-4">
+                    <h2>active development</h2>
+                    <p>At the moment there are three active dvelopers.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <h2>GLPv3</h2>
+                    <p>We provide both the executable and the source. Feel free to contribute.</p>
+
+                </div>
+                <div class="col-md-4 ">
+                    <h2>fully customizeable</h2>
+                    <p>add plugins (using c++), change colors and even more</p>
+
+                </div>
+            </div>
+            <div class="row" style="margin-top:5%;">
+
+                <div class="col-md-4">
+                    <h2>x86, x64 support</h2>
+                    <p>The debugger can open 32bit and 64bit executables. An there is only one GUI.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <h2>GLPv3</h2>
+                    <p>We provide both the executable and the source. Feel free to contribute.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <h2>fully customizeable</h2>
+                    <p>add plugins (using c++), change colors and even more</p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="screen">
+        <a name="features"></a>
+        <div class="fix"></div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Features</h2>
+                    <ul class="twocol">
+                        <li>variables (with regard to the upcoming script feature)</li>
+                        <li>basic calculations (var*@401000+.45^4A)</li>
+                        <li>hide debugger (very basic)</li>
+                        <li>software breakpoints (INT3, LONG INT3, UD2)</li>
+                        <li>memory breakpoints (read, write, execute)</li>
+                        <li>hardware breakpoints (access, write, execute)</li>
+                        <li>stepping (into, over, n instructions)</li>
+                        <li>rtr (return from function)</li>
+                        <li>memory allocation/deallocation in the debuggee</li>
+                        <li>quickly accessing API addresses (GetProcAddress-&gt;76E13620)</li>
+                        <li>fully customizable GUI colors and instruction highlighting</li>
+                        <li>IDA-like sidebar with jump arrows</li>
+                        <li>IDA-like instruction token highlighting (hold 'Z' in disassembly)</li>
+                        <li>memory map</li>
+                        <li>basic module labeling</li>
+                        <li>import reconstruction (using Scylla)</li>
+                        <li>drag&amp;drop files</li>
+                        <li>goto window</li>
+                        <li>register/flags view with editing support and change highlighting</li>
+                        <li>quite fast working in really big code pages (tested up to 5GB)</li>
+                        <li>GUI hotkeys</li>
+                        <li>dynamic jump arrow (just like OllyDbg)</li>
+                        <li>user databases for labels/comments/breakpoints/bookmarks (*.dd64 or *.dd32 files)</li>
+                        <li>easy context menu in disassembly (to set breakpoints etc)</li>
+                        <li>plugin support</li>
+                        <li>(manual) function analysis</li>
+                        <li>easily follow calls/jumps/ret (press ENTER when selecting)</li>
+                        <li>(buggy) dynamic commenting (strings)</li>
+                        <li>scripting support (using the debugger commands)!</li>
+                        <li>simple dump window with various data modes</li>
+                        <li>symbols (+ exports) view with search</li>
+                        <li>simple stack view</li>
+                        <li>programmable reference view</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <a name="plugins"></a>
+        <div class="fix"></div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <h2>Plugins</h2>
+                <div class="col-md-6">
+                    <h3>testplugin</h3>
+                    
+
+                </div>
+                <div class="col-md-6">
+                    <h3>static analysis</h3>
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="screen">
+        <a name="credits"></a>
+        <div class="fix"></div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <h2>Credits</h2>
+                <div class="col-md-4">
+                    <h3>Qt4</h3>
+                    
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; x64dbg.com 2014</p>
+            </footer>
+        </div>
+    </div>
+    <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swipe.min.js"></script>
+    <script type="text/javascript">
+        /*<![CDATA[*/  (function($){$(document).ready(function(){$('.ce_sliderStart').each(function(i,cte){var s=$('.content-slider',cte)[0],c=s.className.split(' ')[1].split('_');new Swipe(s,{'auto':parseInt(c[1]),'speed':parseInt(c[2]),'startSlide':parseInt(c[3]),'continuous':parseInt(c[4]),'menu':$('.slider-control',cte)[0]});});});})(jQuery);/*]]>*/
+    </script>
+
+</body>
+
+</html>
