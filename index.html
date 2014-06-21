@@ -25,12 +25,8 @@
 </head>
 
 <body>
-
-
     <header id="heading">
-
         <div class="navbar, mymenu navbar-default navbar-fixed-top">
-
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,9 +39,7 @@
                         <img style="margin:0; margin-top:-8px;" src="img/icon-white.png">
                     </a>
                 </div>
-
                 <div class="collapse navbar-collapse">
-
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="#start" class="scroll">Start</a>
@@ -73,13 +67,10 @@
                         <li>
                             <a target="_blank" href="help/index.htm">Help</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </div>
-
-
     </header>
     <section class="panel start dark" data-section-name="start">
         <div class="container">
@@ -119,7 +110,7 @@
                             <div class="item">
                                 <img src="img/slide3.png" alt="one gui">
                                 <div class="carousel-caption">
-                                    One GUI, two platforms: x86 and x64.
+                                    One GUI, two platforms: x64 and x32
                                 </div>
                             </div>
                             <div class="item">
@@ -205,63 +196,49 @@
     <!----------------------------------------------------------------------------------------------->
     <section class="panel overview" data-section-name="overview">
         <div class="container">
-
+            <h2>Plugins</h2>
             <div class="row">
-                <h2>Overview</h2>
-                This is a x64/x32 debugger that is currently in active development. The debugger has (currently) three parts:
-
-                <ul>
-                    <li>DBG</li>
-                    <li>GUI</li>
-                    <li>Bridge</li>
-                </ul>
-
-                <dl>
-                    <dt>DBG</dt>
-                    <dd>is the debugging part of the debugger. It handles debugging (using TitanEngine) and will provide data for the GUI.</dd>
-                    <dt>GUI</dt>
-                    <dd>is the graphical part of the debugger. It is built on top of Qt and it provides the user interaction, the dump window, the disassembly, the register window, the memory map view, the log view etc.</dd>
-                    <dt>Bridge</dt>
-                    <dd>is the communication library for the DBG and GUI part (and maybe in the future more parts). The bridge can be used to work on new features, without having to update the code of the other parts. It also ensures low-level code stays (partially separated from the high level GUI code).</p>
-            </div>
-            <div class="row" style="margin-top:5%;">
-
                 <div class="col-md-4">
-                    <h3>active development</h3>
-                    <p>At the moment there are three active developers.</p>
-
+                    <h3>Active development</h3>
+                    <p>x64_dbg is under constant active development.</p>
                 </div>
                 <div class="col-md-4">
                     <h3>GLPv3</h3>
                     <p>We provide both the executable and the source. Feel free to contribute.</p>
-
                 </div>
                 <div class="col-md-4 ">
-                    <h3>fully customizeable</h3>
-                    <p>Add plugins in C++, change colors and even more.</p>
-
+                    <h3>Customizable</h3>
+                    <p>Write plugins C++, change colors and tweak your preferences.</p>
                 </div>
             </div>
             <div class="row" style="margin-top:5%;">
-
                 <div class="col-md-4">
-                    <h3>x86, x64 support</h3>
-                    <p>The debugger can debug 32bit and 64bit executables. And there is only one GUI.</p>
-
+                    <h3>x64/x32 support</h3>
+                    <p>x64_dbg can debug both x64 and x32 applications. There is only one interface.</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>build on reliable libraries</h3>
-                    <p>There is TitanEngine and BeaEngine inside</p>
-
+                    <h3>Built on open-source libraries</h3>
+                    <p>x64_dbg uses Qt, TitanEngine, BeaEngine, Scylla, Jansson, lz4 and XEDParse.</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>easy development</h3>
-                    <p>Using Qt4 for fast and easy development in C++.</p>
-
+                    <h3>Simple, powerful development</h3>
+                    <p>x64_dbg uses C++ and Qt4 to quickly add new features.</p>
                 </div>
             </div>
-
-
+            <div class="row" style="margin-top:5%;">
+                <div class="col-md-4">
+                    <h3>Scriptable</h3>
+                    <p>x64_dbg has an integrated, debuggable, ASM-like scripting language.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Community-aware</h3>
+                    <p>x64_dbg has many features thought of or created by the reversing community.</p>
+                </div>
+                <div class="col-md-4 ">
+                    <h3>Extendable</h3>
+                    <p>Write plugins to add script commands or to integrate your tools.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -309,7 +286,8 @@
                         <span class="yes">x86</span>,
                         <span class="yes">x64</span>]</p>
                     <p>Open-source kernel-mode Anti-Anti-Debug plugin.</p>
-                    <a target="_blank" href="https://bitbucket.org/mrexodia/titanhide">Website</a>
+                    <a target="_blank" href="https://bitbucket.org/mrexodia/titanhide">Source</a>
+                    <a target="_blank" href="https://bitbucket.org/mrexodia/titanhide/downloads">Download</a>
                 </div>
             </div>
             <div class="row" style="margin-top:30%; ">
@@ -322,34 +300,33 @@
     <section class="panel credits" data-section-name="credits">
         <div class="container">
             <h2>Credits</h2>
-            <p>Debugger core by <a href="https://bitbucket.org/mrexodia/titanengine-update">TitanEngine Community Edition</a></p>
-            <p>Disassembly powered by <a href="http://beaengine.org">BeaEngine</a>, <a href="https://bitbucket.org/mrexodia/beaengine">Updated</a></p>
-			<p>Assembly powered by <a href="https://bitbucket.org/mrexodia/xedparse">XEDParse</a></p>
-			<p>Import reconstruction powered by <a href="https://github.com/NtQuery/Scylla">Scylla</a></p>
-			<p>JSON powered by <a href="http://www.digip.org/jansson">Jansson</a></p>
-			<p>Database compression powered by <a href="https://code.google.com/p/lz4">lz4</a></p>
-            <p>Main icon created by <a href="http://www.visualpharm.com">VisualPharm</a></p>
-			<p>Interface icons created by <a href="http://yusukukamiyamane.com">Fugue</a></p>
+            <ul>
+                <li>Debugger core by <a target="_blank" href="https://bitbucket.org/mrexodia/titanengine-update">TitanEngine Community Edition</a></li>
+                <li>Disassembly powered by <a target="_blank" href="http://beaengine.org">BeaEngine</a> (<a target="_blank" href="https://bitbucket.org/mrexodia/beaengine">Updated</a>)</li>
+                <li>Assembly powered by <a target="_blank" href="https://bitbucket.org/mrexodia/xedparse">XEDParse</a></li>
+                <li>Import reconstruction powered by <a target="_blank" href="https://github.com/NtQuery/Scylla">Scylla</a></li>
+                <li>JSON powered by <a target="_blank" href="http://www.digip.org/jansson">Jansson</a></li>
+                <li>Database compression powered by <a target="_blank" href="https://code.google.com/p/lz4">lz4</a></li>
+                <li>Bug icon by <a target="_blank" href="http://www.visualpharm.com">VisualPharm</a></pli>
+                <li>Interface icons by <a target="_blank" href="http://p.yusukekamiyamane.com">Fugue</a></li>
+            </ul>            
 			<br>
             <h3>Special Thanks</h3>
-            <ul>
-                <li>acidflash</li>
-                <li>Ahmadmansoor</li>
-                <li>cyberbob</li>
-                <li>Teddy Rogers</li>
-                <li><a href="http://forum.exetools.com">EXETools community</a></li>
-                <li><a href="https://forum.tuts4you.com">Tuts4You community</a></li>
-                <li>DMichael</li>
-                <li>TEAM DVT</li>
-                <li>Artic</li>
-				<li>Nukem</li>
-            </ul>
+                acidflash, 
+                cyberbob, 
+                Teddy Rogers, 
+                <a target="_blank" href="http://forum.exetools.com">EXETools community</a>, 
+                <a target="_blank" href="https://forum.tuts4you.com">Tuts4You community</a>,
+                DMichael,
+                Artic,
+                Nukem
 			<br>
+            <br>
             <h3>Developers</h3>
             <ul>
-            <li>Mr. eXoDia</li>
-            <li>Sigma</li>
-            <li>tr4ceflow</li>
+                <li>Mr. eXoDia</li>
+                <li>Sigma</li>
+                <li>tr4ceflow</li>
             </ul>
         </div>
     </section>
