@@ -3,58 +3,64 @@ layout: start
 title: x64_dbg
 slides: yes
 ---
+
 <!----------------------------------------------------------------------------------------------->
 <section class="panel start dark" data-section-name="start">
-        <div class="container">
-            <div class="row" style="margin-top:10%;">
-                <div class="col-md-4">
-                    <h1 class="title">x64_dbg</h1>
-                    <h1>
-                        <small>An open-source x64/x32 debugger for windows.</small>
-                    </h1>
-                    <p style="margin-top:10%;">
-                        <a class="btn btn-primary btn-lg blink" href="https://sf.net/projects/x64dbg" target="_blank" role="button">Download &raquo;</a>
-                        <a class="btn btn-primary btn-lg" href="https://bitbucket.org/mrexodia/x64_dbg" target="_blank" role="button">Source &raquo;</a>
-                    </p>
-                </div>
-                <div class="col-md-8">
-                    {% include carousel.html %}
-                </div>
-            </div>
-        </div>
-    </section>
-    <!----------------------------------------------------------------------------------------------->
-    <section class="panel features " data-section-name="features">
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <h2>Features</h2>
-                <div class="twocol">
-                    {% capture features %}{% include features.md %}{% endcapture %}{{ features | markdownify }}     
-                </div>
-            </div>
-        </div>
-    </section>
-    <!----------------------------------------------------------------------------------------------->
-    <section class="panel overview" data-section-name="overview">
-        <div class="container">
-            <h2>Overview</h2>
-            {% include overview.html %}
-        </div>
-    </section>
-    <!----------------------------------------------------------------------------------------------->
-    <section class="panel plugins" data-section-name="plugins">
-        <div class="container">
-            <h2>Plugins</h2>
-            {% include plugins.html %}
+    <div class="container">
+        <div class="row" style="margin-top:10%;">
+            <div class="col-md-4">
+                <h1 class="title">x64_dbg</h1>
+                <h1>
+                    <small>An open-source x64/x32 debugger for windows.</small>
+                </h1>
+                <p style="margin-top:10%;">
+                    <a class="btn btn-primary btn-lg blink" href="https://sf.net/projects/x64dbg" target="_blank" role="button">Download &raquo;</a>
+                    <a class="btn btn-primary btn-lg" href="https://bitbucket.org/mrexodia/x64_dbg" target="_blank" role="button">Source &raquo;
+                    </a>
 
+                </p>
+                <p>
+                    <a href="#features" class="arrow">&nbsp;</a>
+                </p>
+            </div>
+            <div class="col-md-8">
+                {% include carousel.html %}
+            </div>
         </div>
-    </section>
-    <!----------------------------------------------------------------------------------------------->
-    <section class="panel credits" data-section-name="credits">
-        <div class="container">
-            <h2>Credits</h2>
-            {% include credits.html %}
+    </div>
+</section>
+<!----------------------------------------------------------------------------------------------->
+<section class="panel features " data-section-name="features">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <h2>Features</h2>
+            <div class="twocol">
+                {% capture features %}{% include features.md %}{% endcapture %}{{ features | markdownify }}
+            </div>
         </div>
-    </section>
-    <!----------------------------------------------------------------------------------------------->
+    </div>
+</section>
+<!----------------------------------------------------------------------------------------------->
+<section class="panel overview" data-section-name="overview">
+    <div class="container">
+        <h2>Overview</h2>
+        {% include overview.html %}
+    </div>
+</section>
+<!----------------------------------------------------------------------------------------------->
+<section class="panel plugins" data-section-name="plugins">
+    <div class="container">
+        <h2>Plugins</h2>
+        {% include plugins.html %}
+
+    </div>
+</section>
+<!----------------------------------------------------------------------------------------------->
+<section class="panel credits" data-section-name="credits">
+    <div class="container">
+        <h2>Credits</h2>
+        {% include credits.html %}
+    </div>
+</section>
+<!----------------------------------------------------------------------------------------------->
