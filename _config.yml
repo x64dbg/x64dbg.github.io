@@ -1,0 +1,10 @@
+# Site settings
+title: x64d_bg
+description: "an open-source x64/x32 debugger for windows"
+baseurl: ""
+url: "http://www.x64dbg.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge

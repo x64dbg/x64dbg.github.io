@@ -1,78 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
-    <title>x64_dbg</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.min.css" rel="stylesheet">
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-    <header id="heading">
-        <div class="navbar, mymenu navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img style="margin:0; margin-top:-8px;" src="img/icon-white.png">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#start" class="scroll">Start</a>
-                        </li>
-                        <li>
-                            <a href="#features" class="scroll">Features</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="scroll">Overview</a>
-                        </li>
-                        <li>
-                            <a href="#plugins" class="scroll">Plugins</a>
-                        </li>
-                        <li>
-                            <a href="#credits" class="scroll">Credits</a>
-                        </li>
-                        <!--<li>
-                            <a href="#contact" class="scroll">Contact</a>
-                        </li>-->
-                    </ul>
-                    <ul class="nav navbar-nav pull-right">
-                        <li>
-                            <a target="_blank" href="https://bitbucket.org/mrexodia/x64_dbg/issues">Issue Tracker</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="help/index.htm">Help</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="panel start dark" data-section-name="start">
+---
+layout: start
+title: x64_dbg
+slides: yes
+---
+<!----------------------------------------------------------------------------------------------->
+<section class="panel start dark" data-section-name="start">
         <div class="container">
             <div class="row" style="margin-top:10%;">
                 <div class="col-md-4">
@@ -86,53 +18,7 @@
                     </p>
                 </div>
                 <div class="col-md-8">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/slide1.png" alt="interface">
-                                <div class="carousel-caption">
-                                    A familiar, yet new interface.
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/slide2.png" alt="different themes">
-                                <div class="carousel-caption">
-                                    Fully customizable color schemes.
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/slide3.png" alt="one gui">
-                                <div class="carousel-caption">
-                                    One GUI, two platforms: x64 and x32
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/slide4.png" alt="cpu_sidebar">
-                                <div class="carousel-caption">
-                                    More information about jump targets and register values.
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/slide5.png" alt="registerview">
-                                <div class="carousel-caption">
-                                    Smart, content-sensitive register view.
-                                </div>
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
+                    {% include carousel.html %}
                 </div>
             </div>
         </div>
@@ -143,156 +29,24 @@
             <!-- Example row of columns -->
             <div class="row">
                 <h2>Features</h2>
-                <ul class="twocol">
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Open-source</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Intuitive and familiar, yet new user interface</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>C-like expression parser</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Full-featured debugging of DLL and EXE files (TitanEngine)</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>IDA-like sidebar with jump arrows</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>IDA-like instruction token highlighter (highlight registers etc.)</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Memory map</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Symbol view</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Thread view</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Content-sensitive register view</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Fully customizable color scheme</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Dynamically recognize modules and strings</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Import reconstructor integrated (Scylla)</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Fast disassembler (BeaEngine)</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>User database (JSON) for comments, labels, bookmarks etc.</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Plugin support with growing API</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Extendable, debuggable scripting language for automation</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Multi-datatype memory dump</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Basic debug symbol (PDB) support</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Dynamic stack view</li>
-                    <li>
-                        <span class="glyphicon glyphicon-ok shine"></span>Built-in assembler (XEDParse)</li>
-                </ul>
-
+                <div class="twocol">
+                    {% capture features %}{% include features.md %}{% endcapture %}{{ features | markdownify }}     
+                </div>
             </div>
-
-
         </div>
     </section>
     <!----------------------------------------------------------------------------------------------->
     <section class="panel overview" data-section-name="overview">
         <div class="container">
             <h2>Overview</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Active development</h3>
-                    <p>x64_dbg is under constant active development.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>GLPv3</h3>
-                    <p>We provide both the executable and the source. Feel free to contribute.</p>
-                </div>
-                <div class="col-md-4 ">
-                    <h3>Customizable</h3>
-                    <p>Write plugins C++, change colors and tweak your preferences.</p>
-                </div>
-            </div>
-            <div class="row" style="margin-top:5%;">
-                <div class="col-md-4">
-                    <h3>x64/x32 support</h3>
-                    <p>x64_dbg can debug both x64 and x32 applications. There is only one interface.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Built on open-source libraries</h3>
-                    <p>x64_dbg uses Qt, TitanEngine, BeaEngine, Scylla, Jansson, lz4 and XEDParse.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Simple, powerful development</h3>
-                    <p>x64_dbg uses C++ and Qt4 to quickly add new features.</p>
-                </div>
-            </div>
-            <div class="row" style="margin-top:5%;">
-                <div class="col-md-4">
-                    <h3>Scriptable</h3>
-                    <p>x64_dbg has an integrated, debuggable, ASM-like scripting language.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Community-aware</h3>
-                    <p>x64_dbg has many features thought of or created by the reversing community.</p>
-                </div>
-                <div class="col-md-4 ">
-                    <h3>Extendable</h3>
-                    <p>Write plugins to add script commands or to integrate your tools.</p>
-                </div>
-            </div>
+            {% include overview.html %}
         </div>
     </section>
-
     <!----------------------------------------------------------------------------------------------->
     <section class="panel plugins" data-section-name="plugins">
         <div class="container">
             <h2>Plugins</h2>
-            <div class="row plugins">
-                <div class="col-md-6">
-                    <h3>testplugin
-                        <small>&lt;Mr. eXoDia&gt;</small>
-                    </h3>
-                    <p>[
-                        <span class="yes">x86</span>,
-                        <span class="yes">x64</span>]</p>
-                    <p>Demo plugin that demonstrates many of the internal API functions.</p>
-                    <a target="_blank" href="https://bitbucket.org/mrexodia/testplugin">Source</a>
-                </div>
-                <div class="col-md-6">
-                    <h3>StaticAnalysis
-                        <small>&lt;tr4ceflow&gt;</small>
-                    </h3>
-                    <p>[
-                        <span class="yes">x86</span>,
-                        <span class="no">x64</span>]</p>
-                    <p>Detect inter-modular calls and add comments for API calls.</p>
-                    <a target="_blank" href="https://github.com/tr4ceflow/x64dbg-StaticAnalysis">Source</a>
-                    <a target="_blank" href="https://github.com/tr4ceflow/x64dbg-StaticAnalysis/releases">Download</a>
-                </div>
-				<div class="col-md-6">
-                    <h3>ScyllaHide
-                        <small>&lt;Aguila & cypher&gt;</small>
-                    </h3>
-                    <p>[
-                        <span class="yes">x86</span>,
-                        <span class="yes">x64</span>]</p>
-                    <p>Open-source user-mode Anti-Anti-Debug plugin.</p>
-                    <a target="_blank" href="http://scyllahide.tk">Website</a>
-                </div>
-				<div class="col-md-6">
-                    <h3>TitanHide
-                        <small>&lt;Mr. eXoDia&gt;</small>
-                    </h3>
-                    <p>[
-                        <span class="yes">x86</span>,
-                        <span class="yes">x64</span>]</p>
-                    <p>Open-source kernel-mode Anti-Anti-Debug plugin.</p>
-                    <a target="_blank" href="https://bitbucket.org/mrexodia/titanhide">Source</a>
-                    <a target="_blank" href="https://bitbucket.org/mrexodia/titanhide/downloads">Download</a>
-                </div>
-            </div>
-            <div class="row" style="margin-top:30%; ">
-                Get in touch to place your plugin here.
-            </div>
+            {% include plugins.html %}
 
         </div>
     </section>
@@ -300,74 +54,7 @@
     <section class="panel credits" data-section-name="credits">
         <div class="container">
             <h2>Credits</h2>
-            <ul>
-                <li>Debugger core by <a target="_blank" href="https://bitbucket.org/mrexodia/titanengine-update">TitanEngine Community Edition</a></li>
-                <li>Disassembly powered by <a target="_blank" href="http://beaengine.org">BeaEngine</a> (<a target="_blank" href="https://bitbucket.org/mrexodia/beaengine">Updated</a>)</li>
-                <li>Assembly powered by <a target="_blank" href="https://bitbucket.org/mrexodia/xedparse">XEDParse</a></li>
-                <li>Import reconstruction powered by <a target="_blank" href="https://github.com/NtQuery/Scylla">Scylla</a></li>
-                <li>JSON powered by <a target="_blank" href="http://www.digip.org/jansson">Jansson</a></li>
-                <li>Database compression powered by <a target="_blank" href="https://code.google.com/p/lz4">lz4</a></li>
-                <li>Bug icon by <a target="_blank" href="http://www.visualpharm.com">VisualPharm</a></pli>
-                <li>Interface icons by <a target="_blank" href="http://p.yusukekamiyamane.com">Fugue</a></li>
-            </ul>            
-			<br>
-            <h3>Special Thanks</h3>
-                acidflash, 
-                cyberbob, 
-                Teddy Rogers, 
-                <a target="_blank" href="http://forum.exetools.com">EXETools community</a>, 
-                <a target="_blank" href="https://forum.tuts4you.com">Tuts4You community</a>,
-                DMichael,
-                Artic,
-                Nukem
-			<br>
-            <br>
-            <h3>Developers</h3>
-            <ul>
-                <li>Mr. eXoDia</li>
-                <li>Sigma</li>
-                <li>tr4ceflow</li>
-            </ul>
+            {% include credits.html %}
         </div>
     </section>
     <!----------------------------------------------------------------------------------------------->
-    <!--<section class="panel contact" data-section-name="contact">
-        <div class="container">
-<h2>Contact</h2>
-            <div class="row">
-                
-
-            </div>
-
-
-        </div>
-    </section>-->
-    <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/scrollify.min.js"></script>
-    <script>
-        $(function() {
-	$(".panel").css({"height":$(window).height()});
-	$.scrollify({
-		section:".panel"
-	});
-	
-
-	$(".scroll").click(function(e) {
-		e.preventDefault();
-		$.scrollify("move",$(this).attr("href"));
-	});
-});
-    </script>
-
-
-</body>
-
-</html>

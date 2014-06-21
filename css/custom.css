@@ -105,7 +105,7 @@ section {
     margin-right: 10px;
 }
 .yes {
-    color: #08ff25;
+    color: #08ff25 !important;
 }
 .no {
     color: red;
@@ -114,23 +114,47 @@ section {
     font-size: 8em;
     color: #4cb4e8;
     text-shadow: 0px 2px 3px #000;
+    -webkit-font-smoothing: antialiased;
 }
 .plugins a {
     float: right;
     margin-right: 10%;
 }
-.twocol {
+.twocol ul{
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
     -moz-column-count: 2;
     /* Firefox */
     column-count: 2;
 }
+.twocol li:before{
+-webkit-font-smoothing: antialiased;
+box-sizing: border-box;
+color: rgb(8, 255, 37);
+display: inline-block;
+font-family: 'Glyphicons Halflings';
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+height: 14px;
+line-height: 14px;
+list-style-type: disc;
+margin-right: 10px;
+position: relative;
+text-align: left;
+text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+top: 1px;
+width: 14px;
+    content:"\e013";
+
+}
 .blink {
     -webkit-animation-name: pulse2;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
 }
+.blink:hover{-webkit-animation-play-state: paused;background-color: rgba(53, 126, 189, 0.9) !important;}
 /* navbar
    ---------------------------------------------------------------------------
 */
@@ -223,6 +247,8 @@ section {
     outline: none;
     cursor: pointer;
 }
+
+
 /* effects
    ---------------------------------------------------------------------------
 */
