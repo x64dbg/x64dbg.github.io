@@ -1,6 +1,6 @@
 # Site settings
-title: x64d_bg
-description: "an open-source x64/x32 debugger for windows"
+title: x64_dbg
+description: "An open-source x64/x32 debugger for windows."
 baseurl: ""
 url: "http://www.x64dbg.com"
 
