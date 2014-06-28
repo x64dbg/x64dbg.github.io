@@ -98,6 +98,8 @@ section {
 .carousel-caption h3 {
     color: white;
 }
+
+.carousel-inner img{width:100%;height:auto;}
 /* custom class
    ---------------------------------------------------------------------------
 */
@@ -129,7 +131,9 @@ section {
     /* Firefox */
     column-count: 2;
 }
-.twocol li:before{
+.greencol{margin-top:-15%;}
+.greencol li{ list-style: none;}
+.greencol li:before{
 -webkit-font-smoothing: antialiased;
 box-sizing: border-box;
 color: rgb(8, 255, 37);

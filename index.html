@@ -9,7 +9,7 @@ slides: yes
 <section class="panel start dark" data-section-name="start">
     <div class="container">
         <div class="row" style="margin-top:10%;">
-            <div class="col-md-4">
+            <div class="col-xs-4">
                 <h1 class="title">x64_dbg</h1>
                 <h1>
                     <small>An open-source x64/x32 debugger for windows.</small>
@@ -22,7 +22,7 @@ slides: yes
                     <a href="#features" class="scroll arrow">&nbsp;</a>
                 </p>
             </div>
-            <div class="col-md-8">
+            <div class="col-xs-8">
                 {% include carousel.html %}
             </div>
         </div>
@@ -34,11 +34,15 @@ slides: yes
         <!-- Example row of columns -->
         <div class="row">
             <h2>Features</h2>
-            <div class="twocol">
-                {% capture features %}{% include features.md %}{% endcapture %}{{ features | markdownify }}
-            </div> 
+            <div class="col-xs-7">
+                <div class="greencol">
+                    {% capture features %}{% include features.md %}{% endcapture %}{{ features | markdownify }}
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <img src="img/x64dbg_boxshot.png" style="width:80%;height:auto; margin-top:-27%;" />
+            </div 
         </div>
-    </div>
 </section>
 <!----------------------------------------------------------------------------------------------->
 <section class="panel overview" data-section-name="overview">
