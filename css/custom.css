@@ -131,7 +131,7 @@ section {
     /* Firefox */
     column-count: 2;
 }
-.greencol{margin-top:-15%;}
+
 .greencol li{ list-style: none;}
 .greencol li:before{
 -webkit-font-smoothing: antialiased;
