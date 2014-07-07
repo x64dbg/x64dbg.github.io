@@ -6,6 +6,52 @@ permalink: /changelog.html
 
 # Changelog
 
+## 1.9 alpha
+
+07 July 2014
+
+- fixed scroll bar ranges in tables
+- support SetThreadName exception
+- fixed a very annoying bug on some systems with the '^' character being inserted after the '6' without shift pressed
+- re-enabled autocomments (strings etc)
+- strings in register view
+- search for inter-modular calls
+- CALL <jmp.&user32.MessageBoxA> auto label
+- shift+click selection
+- latest XEDParse version (you can now assemble jumps etc)
+- auto-select next instruction after assembling
+- assemble -> fill with NOPs
+- fixed a bug with the sidebar (jumps going out of the bar have no lines anymore)
+- breakpoint menu in dump (hwbp)
+- hexdump ASCII/UNICODE are now actually readable (no spaces between characters)
+- save previous hexdump view mode to config
+- fixed incorrect stack default option (remove your config to apply)
+- memory breakpoints are highlighted in the memory map
+- copy context menu in every StdTable (not yet in disasm/dump)
+- breakpoint context menu in memory map
+- follow in dump/disasm context menu in memory map
+- removed invalid 'OrdinalX' from symbol view
+- section name + module name + rva + label in InfoBox
+- list comments/labels/bookmarks/functions in the reference view
+- fixed a bug in memfindpattern (thanks to Computer_Angel)
+- fixed a crash when deleting all breakpoints
+- ctrl+g now works in CPUDump
+- fixed a bug with printing the instruction immediat values
+- added hex edit dialog
+- added binary edit/copy/paste context menu in disasm/dump/stack
+- binary fill (with wildcard support)
+- added search for -> pattern context menu option
+- required administrator in manifest (may resolve some random bugs)
+- fully support patching (+ save to file) + advanced patch dialog
+- patch import/export
+- fixed jmp/call FAR tokenizing
+- support 0x prefixed numbers
+- added some exception names when an exception is reached
+- binary -> fill NOPs in disassembly
+- fixed a bug with disassembling on an invalid address
+- add support to get the module base (see help)
+- updated help, most commands are now documented
+
 ## 1.8 alpha
 
 21 June 2014
