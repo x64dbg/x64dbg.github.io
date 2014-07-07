@@ -19,3 +19,6 @@
 - Basic debug symbol (PDB) support
 - Dynamic stack view
 - Built-in assembler (XEDParse)
+- View your patches and save them to disk
+- Built-in hex editor
+- Find patterns in memory
