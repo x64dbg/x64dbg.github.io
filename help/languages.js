@@ -12,6 +12,7 @@ lang="en";
 
 if(lang=='de'){/////////////////////////////German////////////////////////////////////////////////////
 
+
 strings["Contents"]                              = "Inhalt";
 strings["Index"]                                 = "Index";
 strings["Search"]                                = "Suche";
@@ -134,7 +135,7 @@ strings["Search"]                                = "Buscar";
 strings["Bookmark"]                              = "Guardar";
 
 strings["Loading the data for search..."]        = "Carga de los datos para la búsqueda ...";
-strings["Type in the word(s) to search for:"]    = "Escriba la palabra a buscar:";
+strings["Type in the word(s) to search for:"]    = "Escriba la palabra (s) a buscar:";
 strings["Search title only"]                     = "Buscar en el título sólo";
 strings["Search previous results"]               = "Buscar en los resultados anteriores";
 strings["Display"]                               = "Mostrar";
@@ -149,39 +150,11 @@ strings["Next"]                                  = "Siguiente";
 
 strings["Loading table of contents..."]          = "Carga de la tabla de contenido ...";
 
-}else if(lang=='pt'){//////////////////////////Portuguese//////////////////////////////////////////////
-
 strings["Topics:"]                               = "Temas";
 strings["Current topic:"]                        = "Tema actual:";
 strings["Remove"]                                = "Eliminar";
 strings["Add"]                                   = "Añadir";
 
-
-strings["Contents"]                              ="Conteúdo";
-strings["Index"]                                 ="índice";
-strings["Search"]                                ="Pesquisar";
-strings["Bookmark"]                              ="Bookmark";
-
-strings["Loading the data for search..."]        ="Colocar os dados para pesquisa ...";
-strings["Type in the word(s) to search for:"]    ="Digite a palavra para procurar:";
-strings["Search title only"]                     ="Buscar título apenas";
-strings["Search previous results"]               ="Pesquisar resultados anteriores";
-strings["Display"]                               ="Exibir";
-strings["No topics found!"]                      ="Nenhum tópico encontrado!";
-
-strings["Type in the keyword to find:"]          ="Digite a palavra-chave para encontrar:";
-
-strings["Show all"]                              ="Mostrar tudo";
-strings["Hide all"]                              ="Ocultar tudo";
-strings["Previous"]                              ="Anterior";
-strings["Next"]                                  ="Próximo";
-
-strings["Loading table of contents..."]          ="Carregando tabela de conteúdos ...";
-
-strings["Topics:"]                               ="Tópicos";
-strings["Current topic:"]                        ="Tema atual:";
-strings["Remove"]                                ="Remover";
-strings["Add"]                                   ="Adicionar";
 
 }else{//////////////////////////////////////English///////////////////////////////////////////////////
 
