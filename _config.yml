@@ -8,3 +8,4 @@ url: "http://www.x64dbg.com"
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
+include: help
