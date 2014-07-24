@@ -6,6 +6,48 @@ permalink: /changelog.html
 
 # Changelog
 
+## 2.0 alpha
+
+24 July 2014
+
+- added _dbgfunctions to plugin header
+- fixed some context menu bugs in the RegistersView
+- option to disassemble in uppercase
+- color settings for symbol log
+- use hexedit colors in ASCII and UNICODE fiels in HexEditDialog
+- added various plugin functions
+- automatically add plugin callbacks on certain exports (see help)
+- updated help
+- updated DeviceNameResolver
+- added boundary checks on DbgMem* functions (resolved some crash)
+- added patches, comments, labels, bookmarks, functions to the toolbar
+- speed boost because the memory map is now cached
+- allow sorting in every StdTable (References, Symbols etc)
+- added simple update checker
+- limit size of the log view
+- click bullets to enable/disable/remove breakpoints
+- fixed a display bug in the title when not inside a module
+- fixed attaching (does not hang anymore)
+- fixed issue with deleting disabled breakpoints
+- fixed an issue with the last breakpoint never removed from the database
+- fixed a crash in the string reference functions
+- fixed a bug in valapifromstring (test.exe:imagebase now works)
+- double click now works better
+- double click on breakpoints will follow in CPU
+- fixed a display bug in the InfoBox
+- breakpoints/bookmarks in the reference view
+- fixed focus problem in Goto dialog
+- double click on the CIP register will follow it in the CPU
+- added font customization options
+- fixed a bug with displaying 'rep stosb'
+- fixed a display bug when there are no bookmarks/comments etc
+- fixed a bug in valtostring, editing CSP will now actually update the stack
+- fixed a bug with negative values in 'complex' expressions
+- WordEditDialog now allows signed and unsigned decimal editing too
+- added callstack
+- added 'Patches' to Disassembly context menu
+- you can now 'Modify' a value in the stack from the context menu
+
 ## 1.9 alpha
 
 07 July 2014
