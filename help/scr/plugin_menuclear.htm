@@ -2,7 +2,7 @@
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>_plugin_menuadd</title>
+<title>_plugin_menuclear</title>
 <meta name="GENERATOR" content="WinCHM">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
@@ -46,7 +46,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(117);
+  parent.nav.tree.selectNode(120);
  }else{
   setTimeout("syn()",500);
 }
@@ -56,7 +56,7 @@ if(parent.nav.tree){
 if(parent!=self){
   setTimeout("syn()",100);
 }else{
-  parent.location.href = "../index.htm#page=_plugin_menuadd.htm";
+  parent.location.href = "../index.htm#page=plugin_menuclear.htm";
 }
 originalOnload = window.onload;
 if(originalOnload==null){
@@ -75,31 +75,40 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <em><FONT face=Courier>New&nbsp;Help &gt; 
       <A href="Plugins.htm">Plugins</A> &gt; <A href="Exports.htm">API</A> &gt; </FONT>  </em> </div>
 <div id="winchm_template_title"><FONT 
-      face=Courier>_plugin_menuadd</FONT>
+      face=Courier>_plugin_menuclear</FONT>
 </div>
 </td>
 <td align="right" style="WIDTH: 90px">
-<A href="_plugin_debugskipexceptions.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="_plugin_menuaddentry.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+<A href="plugin_menuaddseparator.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="Structures.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
 </td>
 </tr>
 </table>
 </div>
 <div id="winchm_template_content">
 <p><FONT face=Courier>
-<P><STRONG>_plugin_menuadd<BR></STRONG>This function adds a new child menu to a menu.</P>
-<P><STRONG>int&nbsp;_plugin_menuadd(<BR>int </STRONG>hMenu<STRONG>, </STRONG>//menu handle to add the 
-new child menu to<BR><STRONG>const char* </STRONG>title //child menu title<BR><STRONG>);</STRONG></P>
-<P><STRONG>Parameters</STRONG> </P>
-<P><U>hMenu</U>: Menu handle from a previously-added child menu or from 
-the main plugin menu.</P>
-<P><U>title</U>       
- : Menu title.</P>
+<P><STRONG>_plugin_menuclear<BR></STRONG>This function removes all entries and child menus 
+from a menu. It will <STRONG>not </STRONG>remove the menu itself.</P>
 <P>
-<STRONG>Return Values</STRONG>
-<BR >    Returns the    child menu handle 
-(unique), -1 on failure.</P></FONT></p>
+<STRONG>
+bool&nbsp;
+</STRONG>
+<STRONG>
+_plugin_menuclear
+
+</STRONG>
+<STRONG>(
+<BR > int</STRONG>hMenu
+<STRONG ></STRONG>//menu handle&nbsp;of the menu to clear&nbsp;
+
+<BR>
+<STRONG>);</STRONG></P>
+<P><STRONG>Parameters</STRONG></P>
+<P><U>hMenu</U>: Menu handle from a 
+previously-added child menu or from the main plugin menu.</P>
+<P><STRONG>Return Values</STRONG> <BR>Returns true on success.</P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
 
-</body></HTML>
+</body>
+</html>

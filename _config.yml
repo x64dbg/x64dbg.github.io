@@ -8,4 +8,3 @@ url: "http://www.x64dbg.com"
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
-include: ['_plugin_debugpause.htm', '_plugin_debugskipexceptions.htm', '_plugin_logprintf.htm', '_plugin_logputs.htm', '_plugin_menuadd.htm', '_plugin_menuaddentry.htm', '_plugin_menuaddseparator.htm', '_plugin_menuclear.htm', '_plugin_registercallback.htm', '_plugin_registercommand.htm', '_plugin_unregistercallback.htm', '_plugin_unregistercommand.htm']
