@@ -17,26 +17,21 @@ slides: yes
                 <p style="margin-top:10%;">
                     <a class="btn btn-primary btn-lg blink" href="http://download.x64dbg.com" target="_blank" role="button">Download &raquo;</a>
                     <a class="btn btn-primary btn-lg" href="http://source.x64dbg.com" target="_blank" role="button">Source &raquo;</a>
-					<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
-						data-address="1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY"
-						data-shared="false">
-						<div class="blockchain stage-begin">
-							<img src="https://blockchain.info//Resources/buttons/donate_64.png"/>
-						</div>
-						<div class="blockchain stage-loading" style="text-align:center">
-							<img src="https://blockchain.info//Resources/loading-large.gif"/>
-						</div>
-						<div class="blockchain stage-ready">
-							<p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
-							<p align="center" class="qr-code"></p>
-						</div>
-						<div class="blockchain stage-paid">
-							Donation of <b>[[value]] BTC</b> Received. Thank You.
-						</div>
-						<div class="blockchain stage-error">
-							<font color="red">[[error]]</font>
-						</div>
-					</div>
+					<script src="http://coinwidget.com/widget/coin.js"></script>
+					<script>
+					CoinWidgetCom.go({
+						wallet_address: "1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY"
+						, currency: "bitcoin"
+						, counter: "amount"
+						, alignment: "bl"
+						, qrcode: true
+						, auto_show: false
+						, lbl_button: "Donate"
+						, lbl_address: "x64_dbg"
+						, lbl_count: "donations"
+						, lbl_amount: "BTC"
+					});
+					</script>
                 </p>
                 <p>
                     <a href="#features" class="scroll arrow">&nbsp;</a>
