@@ -1,0 +1,67 @@
+<html>
+  <head>
+
+    <title>Bitcoin-donate Demo</title>
+
+    <link rel="stylesheet" href="btcdonate/btcdonate.css">
+
+    <style>
+      /*
+       *
+       * None of this style code is necessary.  It's strictly to make the demo
+       * presentable.
+       *
+       */
+      body {
+        padding: 30px;
+        color: #333333;
+		background: #1b1b1b;
+      }
+      a {
+        color: #333333;
+        text-decoration: none;
+      }
+      .demo-space {
+        margin-top: 400px;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="demo-space">
+      <a href="bitcoin:1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY">Donate</a>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode-0.7.0.min.js"></script>
+    <script type="text/javascript" src="btcdonate/btcdonate.js"></script>
+
+    <script type="text/javascript">
+
+      btcdonate();
+
+      /*
+       *
+       * You can also try variations by changing the "fill" and "radius" values:
+       *
+       * Use a black QR code:
+       *   btcdonate({fill: #990000});
+       *
+       * Don't curve the lines so much:
+       *   btcdonate({radius: 0});
+       *
+       * Combine both of the above:
+       *   btcdonate({
+       *     fill: #990000,
+       *     radius: 0
+       *   });
+       *
+       */
+
+    </script>
+
+  </body>
+</html>
+
