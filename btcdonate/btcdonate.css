@@ -5,7 +5,7 @@
  */
 .btcdonate-bubble {
   position: relative;
-  width: 170px;
+  width: 140px;
   padding: 10px;
   background: #1b1b1b;
   -webkit-border-radius: 10px;
@@ -15,8 +15,8 @@
   text-align: center;
 }
 .btcdonate-qr {
-  width: 180px;
-  height: 18px;
+  width: 130px;
+  height: 130px;
   border: #ffffff solid 3px;
   margin-left: auto;
   margin-right: auto;
