@@ -25,7 +25,7 @@ var btcdonate = function(options){
     // Options
     var distance       = 25;
     var time           = 250;
-    var hideDelay      = 250;
+    var hideDelay      = 100;
     var hideDelayTimer = null;
 
     // Tracker
