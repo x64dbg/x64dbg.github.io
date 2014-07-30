@@ -52,7 +52,7 @@ var btcdonate = function(options){
     $(this).append($bubble);
 
     var bubble_offset_vertical = ($bubble.height() + 25) * -1;
-    var bubble_offset_horizontal = (($bubble.width() - $(trigger).width()) / 2) * -1 + 7;
+    var bubble_offset_horizontal = (($bubble.width() - $(trigger).width()) / 2) * -1 + 12;
 
     // Set the mouseover and mouseout on both elements
     $([trigger, $bubble.get(0)]).mouseover(function () {
