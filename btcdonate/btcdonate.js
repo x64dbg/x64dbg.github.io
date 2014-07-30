@@ -1,6 +1,7 @@
 /*
  *
  * Original source from: http://jqueryfordesigners.com/coda-popup-bubbles.1.html
+ * Github: https://github.com/danielquinn/bitcoin-donate
  *
  */
 var btcdonate = function(options){
