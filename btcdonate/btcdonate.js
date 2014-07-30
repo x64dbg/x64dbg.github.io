@@ -25,7 +25,7 @@ var btcdonate = function(options){
     // Options
     var distance       = 25;
     var time           = 250;
-    var hideDelay      = 500;
+    var hideDelay      = 250;
     var hideDelayTimer = null;
 
     // Tracker
@@ -52,7 +52,7 @@ var btcdonate = function(options){
     $(this).append($bubble);
 
     var bubble_offset_vertical = ($bubble.height() + 25) * -1;
-    var bubble_offset_horizontal = (($bubble.width() - $(trigger).width()) / 2) * -1 + 5;
+    var bubble_offset_horizontal = (($bubble.width() - $(trigger).width()) / 2) * -1 + 7;
 
     // Set the mouseover and mouseout on both elements
     $([trigger, $bubble.get(0)]).mouseover(function () {
