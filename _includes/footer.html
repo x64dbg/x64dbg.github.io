@@ -12,15 +12,20 @@
 <script src="js/scrollify.min.js"></script>
 <script>
     $(function() {
-	$(".panel").css({"height":$(window).height()});
-	$.scrollify({
-		section:".panel"
-	});
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+    if (isMobile.matches) {
+        //Source: http://bit.ly/VDuiuC
+		$(".panel").css({"height":$(window).height()});
+		$.scrollify({
+			section:".panel"
+		});
 	
 
-	$(".scroll").click(function(e) {
-		e.preventDefault();
-		$.scrollify("move",$(this).attr("href"));
-	});
+		$(".scroll").click(function(e) {
+			e.preventDefault();
+			$.scrollify("move",$(this).attr("href"));
+		});
+	}
 });
 </script>{% endif %}
