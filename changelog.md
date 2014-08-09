@@ -6,6 +6,56 @@ permalink: /changelog.html
 
 # Changelog
 
+## 2.1 alpha
+
+9 August 2014
+
+- plugin directory will be created automatically for a more obvious reason to put plugins there :)
+- find command is now implemented
+- you can now copy selection in the disassembly
+- middle mouse in dump copies the currently selected address
+- fixed an issue with segments being incorrectly disassembled in the assemble dialog
+- double click on address in dump/stack will enable relative view
+- fixed a crash with very big commands
+- fixed a performance issue in AppearanceDialog
+- threaded calls to resolveExpression for a smoother user experience in the goto/value dialog
+- fixed resizing columns
+- fixed scroll bar in memory map
+- alternative memory map view
+- horizontal scroll bar now implemented
+- fixed a bug with highlighting tokens 
+- infobox with follow in dump menu and string/character/label recognition
+- follow in dump context menu
+- attach dialog + detach option in menu
+- automatically stop debugging when trying to attach/initialize when still in a session
+- fixed selection bugs in the dump/stack
+- allow selection in the stack everywhere, not just in the data
+- resolved some memory leaks
+- JIT Debugger support
+- select first module when opening the patch dialog
+- fixed API resolving
+- status bar messages instead of message boxes when saving settings
+- donation button in help
+- added calculator to help menu (fully supports expressions used in the command bar)
+- fixed deleting disabled breakpoints
+- option to download symbols from the microsoft symbol store
+- allow to enable/disable hardware/memory breakpoints
+- fixed hardware breakpoints (they wouldn't restore)
+- fixed function end drawing on instructions with 2 or more bytes
+- differentiate between system and attach breakpoint in options
+- check file architecture before debugging (now x32 DLLs wont load in x64_dbg)
+- added option to display autocomments only on CIP
+- launcher (start launcher.exe to register shell extension)
+- thread switching + more in the threads tab
+- fixed double click events
+- fixed a bug with signed/unsigned values in WordEditDialog
+- fixed various interface bugs in the table view
+- allow customize shortcuts
+- updated credits
+- updated help
+- added CB_WINEVENT_GLOBAL callback
+- fixed possible crashes with string conversion
+
 ## 2.0 alpha
 
 24 July 2014
