@@ -34,7 +34,7 @@ var btcdonate = function(options){
     var shown      = false;
 
     var trigger = $('.btcdonate-trigger', this).get(0);
-    var address = $(trigger).attr("addr");
+    var address = $(trigger).attr("data-btcaddress");
 
     var $qr = $('<div class="btcdonate-address"></div>')
       .qrcode({
