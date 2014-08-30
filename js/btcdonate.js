@@ -15,8 +15,8 @@ var btcdonate = function(options){
     radius: options.radius || 0.3
   };
 
-  // Wrap all links with addr="bitcoin:..." so that we can operate on them
-  $("a[addr^=bitcoin]")
+  // Wrap all links with data-btcaddress="bitcoin:..." so that we can operate on them
+  $("a[data-btcaddress^=bitcoin]")
     .addClass("btcdonate-trigger")
     .wrap('<span class="btcdonate"></span>');
 
