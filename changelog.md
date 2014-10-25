@@ -6,6 +6,46 @@ permalink: /changelog.html
 
 # Changelog
 
+## 2.2 alpha
+25 October 2014
+
+- better JIT Debugger information in the GUI
+- JIT commands in the help
+- Fixed various TitanEngine bugs
+- resolved a crash when calling plugin callbacks
+- remove plugins from the internal list on unloading (resolved another crash)
+- fixed a bug in SearchListView with searching (strings would disappear)
+- do not draw CIP when running
+- fixed a bug with copying single byte commands
+- fixed the launcher (crashes with compatibility mode)
+- move detach command to file menu (+ new icon)
+- HW BP on [RSP] is now back (thanks to DragonLoft!)
+- show if a jump is going to execute or not in the InfoBox
+- fix: Changing a label from an empty value to an empty value shows an error
+- breakpoint/bookmark in the symbol view
+- advanced change page rights dialog
+- clear threads on detach (bugfix)
+- fixed a crash in AbstractTableView
+- new about dialog
+- search for -> command in gui
+- fixed deadlock on detaching while a script was running
+- fixed a bug in the DbgDisasmFastAt function
+- changed some register positions
+- go to thread entry option in Thread view
+- save user sorting preference for the session
+- fixed various possible buffer overflows and other possible bugs
+- change commandline of debuggee on the fly
+- select next breakpoint on enable/disable
+- unicode support (UTF-8)
+- register view now has scroll area
+- set focus to disassembly on target load
+- better scrollbars in InfoBox
+- uppercase option now will not uppercase API names
+- fixed a bug with duplicate recent files
+- changed confusing 'memory leaks found' message
+- auto move cursor on toggling BP in reference view
+- performance improvement with reading settings  
+
 ## 2.1 alpha
 
 9 August 2014
