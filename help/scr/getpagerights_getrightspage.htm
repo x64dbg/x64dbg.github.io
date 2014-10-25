@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>_plugin_menuaddentry</title>
+<title>getpagerights/getrightspage</title>
 <meta name="GENERATOR" content="WinCHM">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(138);
+  parent.nav.tree.selectNode(88);
  }else{
   setTimeout("syn()",500);
 }
@@ -58,7 +58,7 @@ if(parent.nav.tree){
 if(parent!=self){
   setTimeout("syn()",100);
 }else{
-  parent.location.href = "../index.htm?page=plugin_menuaddentry.htm";
+  parent.location.href = "../index.htm?page=getpagerights_getrightspage.htm";
 }
 originalOnload = window.onload;
 if(originalOnload==null){
@@ -75,39 +75,29 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <td>
 <div id="winchm_template_navigation">
 <em><FONT face=Courier>New&nbsp;Help &gt; 
-      <A href="Plugins.htm">Plugins</A> &gt; <A href="Exports.htm">API</A> &gt; </FONT>  </em> </div>
+      <A href="Commands.htm">Commands</A> &gt; <A href="Memory_Operations.htm">Memory Operations</A> &gt; </FONT>  </em> </div>
 <div id="winchm_template_title"><FONT 
-      face=Courier>_plugin_menuaddentry</FONT>
+      face=Courier>getpagerights/getrightspage</FONT>
 </div>
 </td>
 <td align="right" style="WIDTH: 90px">
-<A href="plugin_menuadd.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="plugin_menuaddseparator.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+<A href="setpagerights_setrightspage.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="Plugins_section.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
 </td>
 </tr>
 </table>
 </div>
 <div id="winchm_template_content">
 <p><FONT face=Courier>
-<P><STRONG>_plugin_menuaddentry<BR></STRONG>This function adds a menu entry to a menu.</P>
-<P><STRONG>bool&nbsp;_plugin_menuaddentry(<BR>int 
-</STRONG>hMenu<STRONG>, </STRONG>//menu handle to add the new 
-child menu to<BR><STRONG>int</STRONG> hEntry, //plugin-wide identifier for the 
-menu entry<BR><STRONG>const char* 
-</STRONG>title //menu entry title<BR><STRONG>);</STRONG></P>
-<P><STRONG>Parameters</STRONG> </P>
-<P><U>hMenu</U>: Menu handle from a 
-previously-added child menu or from the main plugin menu.</P>
-<P><U>hEntry</U>: A plugin-wide identifier for the menu 
-entry. This is the value you will get in the PLUG_CB_MENUENTRY callback 
-structure.</P>
-<P><U>title</U> : Menu 
-entry&nbsp;title.</P>
-<P><STRONG>Return Values</STRONG> <BR>Returns true when the entry was added without problems, false 
-otherwise.</P>
+<P><STRONG>getpagerights[,getpagerights,getrightspage]<BR></STRONG>Get the&nbsp;rights of a memory page.</P>
+<P class=rvps3><SPAN class=rvts11><U>arguments</U>&nbsp;<BR></SPAN><SPAN 
+class=rvts9>&nbsp; arg1:&nbsp;Memory Address&nbsp;of page 
+(it fix&nbsp;the address if&nbsp;this arg&nbsp;is not the top address of a 
+page). </SPAN></P>
+<P class=rvps3><SPAN class=rvts9></SPAN><SPAN class=rvts11><U>result <BR></U></SPAN><SPAN class=rvts9>This command does not set any result variables.</SPAN></P>
 <P>&nbsp;</P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
 
 </body>
-</html>
+</html>
