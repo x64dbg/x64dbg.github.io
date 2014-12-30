@@ -6,6 +6,53 @@ permalink: /changelog.html
 
 # Changelog
 
+## 2.3 alpha
+30 December 2014
+
+- FPU register support
+- fixed a bug with the register view not being updated when CSP changes
+- fixed buffer overflows with symbol names
+- better JIT debugger support
+- resolved another crash in dbghelp with long symbol names
+- added a separator in the HexDump every 4 bytes
+- fixed bugs with printing the debug strings
+- fixed SetThreadName exceptions
+- you can now safely use "eax * 4 + 3" (spaces caused problems before)
+- fixed a crash with very long automatic comments
+- fixed all kinds of small coding bugs (coverity)
+- find references in dump context menu
+- find a range of references (select multiple bytes and find references to either of them)
+- reload script option
+- va <-> file offset conversion
+- goto -> file offset
+- loadlib command to inject a dll in the debuggee
+- some checks with TitanEngine
+- resolved crashes with threading race conditions (these are random crashes, hopefully all are solved now)
+- build date in the about dialog
+- fixed some bugs with the status label
+- added suspend/resume all threads option
+- shortcut files are now resolved correctly
+- resolved stack overflow (even less crashes!)
+- changes the mulhi operator from '$' to '`' (nobody knew this operator existed right?)
+- access module rva's by doing "[module]:$[rva]"
+- skip an instruction using Ctrl+F8 (useful for INT3 breakpoints you placed yourself)
+- mov dest, #DATA# works now
+- more responsive GUI (less redrawing hopefully)
+- faster and more responsive mouse wheel scrolling
+- fixed possible freezes on Windows XP
+- debug strings are not printed twice anymore
+- automatic comments have a different (customizable) color
+- double click in the dump starts binary edit
+- double click in the stack starts modify value
+- access a module entry point using "[module]:entry"
+- more crazy input possibilities (such as "kernel32.GetProcAddress" working finally)
+- "Follow Entry Point in Disassembler" in symbols view
+- "Copy File Path" in symbols view
+- you can customize the color of INT3 instructions (filling)
+- fixed a bug with copying the wrong number of instructions in the disassembler
+- tabbed reference view
+- fixed some bugs in TitanEngine
+
 ## 2.2 alpha
 25 October 2014
 
