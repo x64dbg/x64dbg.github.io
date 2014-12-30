@@ -1,4 +1,5 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!-- saved from url=(0014)about:internet -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -14,18 +15,90 @@ html,body {
 }
 </style>
 
+
+
+
+<link href="template/winchm_template_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_content').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_content').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_content').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_content').style.width = 'auto';
+document.getElementById('winchm_template_content').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+</script>
 </head>
 
-<body>
-<P class=rvps3><SPAN class=rvts10><STRONG>mov[,set]</STRONG><BR></SPAN><SPAN class=rvts9>Set a variable.</SPAN><SPAN class=rvts9><BR></SPAN></P>
-<P class=rvps3><SPAN class=rvts11><U>arguments</U><BR></SPAN><SPAN class=rvts9>&nbsp; arg1:</SPAN><SPAN class=rvts9> </SPAN><SPAN 
-class=rvts9></SPAN><SPAN class=rvts9>Variable name (optionally prefixed with a $) to 
-set. When the variable does not exist, it will be 
-created.       
-</SPAN></P>
-<P class=rvps3><SPAN class=rvts9>       
-</SPAN><SPAN class=rvts9>&nbsp; 
-arg2:</SPAN><SPAN class=rvts9> </SPAN><SPAN 
-class=rvts9></SPAN><SPAN class=rvts9>Value to store in the variable.</SPAN><SPAN class=rvts9><BR></P></SPAN>
-<P class=rvps3><SPAN class=rvts11><U>result<BR></U></SPAN><SPAN class=rvts9>This command does not set any result 
-variables.</SPAN></P></head>
+<body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(55);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=mov_set.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+<table width="100%" height="50" bgcolor="#c4d0f4" style="WIDTH: 100%" cellSpacing=0 cellPadding=3 border=0>
+<tr>
+<td>
+<div id="winchm_template_navigation">
+<em><FONT face=Courier>New&nbsp;Help &gt; 
+      <A href="Commands.htm">Commands</A> &gt; <A href="Variables_section.htm">Variables</A> &gt; </FONT>  </em> </div>
+<div id="winchm_template_title"><FONT 
+      face=Courier>mov/set</FONT>
+</div>
+</td>
+<td align="right" style="WIDTH: 90px">
+<A href="varlist.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="Misc.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+</td>
+</tr>
+</table>
+</div>
+<div id="winchm_template_content">
+<p><FONT face=Courier>
+<P class=rvps3><STRONG>mov[,set]</STRONG><BR>Set a 
+variable.</P>
+<P class=rvps3><U>arguments</U><BR>&nbsp; arg1: Variable name (optionally prefixed with a $) to 
+set. When the variable does not exist, it will be created.</P>
+<P class=rvps3>&nbsp; arg2: Value to store in the 
+variable.</P>
+<P class=rvps3><U>result<BR></U>This command does not set any result 
+variables.</P></FONT></p>
+<hr>
+  <font face="Courier" color="#808080" size="1"><A 
+href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
+
+</body>
+</html>

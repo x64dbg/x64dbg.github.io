@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(29);
+  parent.nav.tree.selectNode(31);
  }else{
   setTimeout("syn()",500);
 }
@@ -81,7 +81,7 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </div>
 </td>
 <td align="right" style="WIDTH: 90px">
-<A href="setcommandline_setcmdline.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="Breakpoints.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+<A href="setcommandline_setcmdline.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="loadlib.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
 </td>
 </tr>
 </table>
@@ -89,12 +89,13 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_content">
 <p><FONT face=Courier>
 <P><STRONG>getcommandline[,getcmdline]<BR></STRONG>It&nbsp;gets the actual command line.</P>
-<P class=rvps3><SPAN class=rvts11><U>No arguments </U></SPAN></P>
-<P class=rvps3><SPAN class=rvts11><U>result <BR></U></SPAN><SPAN class=rvts9>This command does not set any result variables.</SPAN></P>
-<P>&nbsp;</P></FONT></p>
+<P><U>arguments</U><BR>This command has no arguments.</P>
+<P class=rvps3><U>result <BR></U>This command does not set any result 
+variables.</P>
+</FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
 
 </body>
-</html>
+</html>

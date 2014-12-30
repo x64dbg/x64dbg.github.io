@@ -1,4 +1,5 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!-- saved from url=(0014)about:internet -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -14,20 +15,95 @@ html,body {
 }
 </style>
 
+
+
+
+<link href="template/winchm_template_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_content').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_content').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_content').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_content').style.width = 'auto';
+document.getElementById('winchm_template_content').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+</script>
 </head>
 
-<body>
+<body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(126);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=find.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+<table width="100%" height="50" bgcolor="#c4d0f4" style="WIDTH: 100%" cellSpacing=0 cellPadding=3 border=0>
+<tr>
+<td>
+<div id="winchm_template_navigation">
+<em><FONT face=Courier>New&nbsp;Help &gt; 
+      <A href="Commands.htm">Commands</A> &gt; <A href="Data.htm">Data</A> &gt; </FONT>  </em> </div>
+<div id="winchm_template_title"><FONT 
+      face=Courier>find</FONT>
+</div>
+</td>
+<td align="right" style="WIDTH: 90px">
+<A href="refstr_strref.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="findall.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+</td>
+</tr>
+</table>
+</div>
+<div id="winchm_template_content">
+<p><FONT face=Courier>
 <P><STRONG>find<BR></STRONG>  Find a pattern.</P>
-<P class=rvps3><SPAN class=rvts11><U>arguments</U> <BR></SPAN><SPAN class=rvts9>&nbsp; arg1: The address to start searching 
-from. Notice that the searching will stop when the end of the memory page this 
-address resides in has been reached. This means you cannot search the complete 
-process memory without enumerating the memory pages first.</SPAN></P>
-<P class=rvps3><SPAN class=rvts9>&nbsp; arg2: The byte pattern to search for. This byte 
-pattern can contain wildcards (?) for example: "EB0?90??8D".</SPAN></P>
-<P class=rvps3><SPAN class=rvts9>         [arg3]: 
-The size of the data to search in.</SPAN></P>
-<P class=rvps3><SPAN class=rvts11><U>result <BR></U></SPAN><SPAN 
-class=rvts9>The $result variable is set to the virtual 
-address of the address that matches the byte pattern. $result will be 0 when the pattern could not be 
-matched.</SPAN></P>
-<P>&nbsp;</P></head>
+<P class=rvps3><U>arguments</U> <BR>&nbsp; arg1: The address to start searching from. Notice 
+that the searching will stop when the end of the memory page this address 
+resides in has been reached. This means you cannot search the complete process 
+memory without enumerating the memory pages first.</P>
+<P class=rvps3>&nbsp; arg2: The byte pattern to search for. 
+This byte pattern can contain wildcards (?) for example: "EB0?90??8D".</P>
+<P class=rvps3>[arg3]: The size of the data to search 
+in.</P>
+<P class=rvps3><U>result <BR></U>The $result variable is set to the virtual address of 
+the address that matches the byte pattern. $result will be 0 when the pattern 
+could not be matched.</P>
+<P>&nbsp;</P></FONT></p>
+<hr>
+  <font face="Courier" color="#808080" size="1"><A 
+href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
+
+</body>
+</html>

@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(62);
+  parent.nav.tree.selectNode(66);
  }else{
   setTimeout("syn()",500);
 }
@@ -89,17 +89,16 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_content">
 <p><FONT face=Courier>
 <P><STRONG>asm<BR></STRONG>Assemble an instruction.</P>
-<P class=rvps3><SPAN class=rvts11><U>arguments</U> <BR></SPAN><SPAN 
-class=rvts9>&nbsp; arg1: Address to place the assembled instruction at.</SPAN> </P>
-<P class=rvps3><SPAN 
-class=rvts9> &nbsp; arg2: Instruction text.</SPAN> </P>
-<P class=rvps3><SPAN 
-class=rvts9>[arg3]: When specified the remainder of the previous 
-instruction will be filled with NOPs.</SPAN> </P>
-<P class=rvps3><SPAN class=rvts11><U>result<BR></U></SPAN><SPAN class=rvts9><EM>$result</EM> will be set to the assembled instruction size. 0 on 
-failure.</SPAN></P></FONT></p>
+<P class=rvps3><U>arguments</U> <BR>&nbsp; arg1: Address to place the assembled instruction at. 
+ </P>
+<P class=rvps3>&nbsp; arg2: Instruction text. </P>
+<P class=rvps3>[arg3]: When specified the remainder of the 
+previous instruction will be filled with NOPs. </P>
+<P class=rvps3><U>result<BR></U><EM>$result</EM> will be set to the 
+assembled instruction size. 0 on failure.</P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
 
-</body>
+</body>
+</html>

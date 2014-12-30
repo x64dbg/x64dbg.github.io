@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(56);
+  parent.nav.tree.selectNode(60);
  }else{
   setTimeout("syn()",500);
 }
@@ -91,20 +91,16 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <P><STRONG>disasm[,dis,d]<BR></STRONG>  
     Disassemble at a certain position.</P>
 <P class=rvps3>
-<SPAN class=rvts11>
 <U>arguments</U>
 <BR >
 
-</SPAN>
-<SPAN class=rvts9 ></SPAN>
-
-<SPAN class=rvts9>
 [arg1]: The address to disassemble at. When not specified, 
-there will be assembled at CIP.</SPAN>
-</P><P class=rvps3><SPAN class=rvts11><U>result<BR></U></SPAN><SPAN class=rvts9>This command does not set any result 
-variables.</SPAN></P></FONT></p>
+there will be assembled at CIP. 
+</P><P class=rvps3><U>result<BR></U>This command does not set any result 
+variables.</P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
 
-</body>
+</body>
+</html>

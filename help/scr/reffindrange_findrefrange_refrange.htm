@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>setcommandline/setcmdline</title>
+<title>reffindrange/findrefrange/refrange</title>
 <meta name="GENERATOR" content="WinCHM">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(30);
+  parent.nav.tree.selectNode(130);
  }else{
   setTimeout("syn()",500);
 }
@@ -58,7 +58,7 @@ if(parent.nav.tree){
 if(parent!=self){
   setTimeout("syn()",100);
 }else{
-  parent.location.href = "../index.htm?page=setcommandline_setcmdline.htm";
+  parent.location.href = "../index.htm?page=reffindrange_findrefrange_refrange.htm";
 }
 originalOnload = window.onload;
 if(originalOnload==null){
@@ -75,29 +75,38 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <td>
 <div id="winchm_template_navigation">
 <em><FONT face=Courier>New&nbsp;Help &gt; 
-      <A href="Commands.htm">Commands</A> &gt; <A href="Debug_Control.htm">Debug Control</A> &gt; </FONT>  </em> </div>
+      <A href="Commands.htm">Commands</A> &gt; <A href="Data.htm">Data</A> &gt; </FONT>  </em> </div>
 <div id="winchm_template_title"><FONT 
-      face=Courier>setcommandline/setcmdline</FONT>
+      face=Courier>reffindrange/findrefrange/refrange</FONT>
 </div>
 </td>
 <td align="right" style="WIDTH: 90px">
-<A href="symdownload_downloadsym.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="getcommandline_getcmdline.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+<A href="findasm_asmfind.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="Plugins.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
 </td>
 </tr>
 </table>
 </div>
 <div id="winchm_template_content">
 <p><FONT face=Courier>
-<P><STRONG>setcommandline[,setcmdline]<BR></STRONG>It changes the command line data.     </P>
+<P><STRONG>reffindrange[,findrefrange,ref</STRONG><STRONG>range</STRONG><STRONG>]<BR></STRONG>Find references to a certain range of values.</P>
 <P class=rvps3>
 <U>
 arguments
 
 </U>
-<BR>
-[arg1]:&nbsp;New command line.&nbsp;</P>
-<P class=rvps3><U>result <BR></U>This command does not set any result 
-variables.</P></FONT></p>
+<BR>&nbsp; arg1: Start of the range (will be included in the 
+results when found).</P>
+<P class=rvps3>
+[arg2]: End of range (will be included in 
+the results when found). When not specified the first argument will be used.</P>
+<P class=rvps3 >
+
+[arg3]: Address&nbsp;of/inside a memory page 
+to look in. When not specified CIP will be used.&nbsp;</P>
+<P class=rvps3>[arg4]: The size of the data to search in.</P>
+<P class=rvps3><U>result <BR></U>The $result variable is set to the number of references 
+found. </P>
+</FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>

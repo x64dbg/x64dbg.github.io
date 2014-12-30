@@ -44,11 +44,12 @@ window.onafterprint = d_onafterprint;
 </script>
 </head>
 
+
 <body><script language="JavaScript" type="text/JavaScript">
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(58);
+  parent.nav.tree.selectNode(62);
  }else{
   setTimeout("syn()",500);
 }
@@ -89,25 +90,15 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <div id="winchm_template_content">
 <p><FONT face=Courier>
 <P><STRONG>sdump<BR></STRONG>Dump the&nbsp;at a certain position.</P>
-<P class=rvps3><SPAN class=rvts11><U>arguments</U> <BR></SPAN>
-<SPAN 
-class=rvts9>
-</SPAN>
-<SPAN class=rvts9>
-[arg1]: The address to dump at (must be inside the thread 
-stack range).
-
-</SPAN></P>
+<P class=rvps3><U>arguments</U> <BR>[arg1]: The address to dump at (must be inside the thread 
+stack range).</P>
 <P class=rvps3>
-<SPAN class=rvts11 >
 <U >
   result 
 
-<BR></U></SPAN>
-<SPAN 
-class=rvts9>This command does not set any result 
-variables.</SPAN> </P>
-<P>&nbsp;</P></FONT></p>
+<BR></U>This command does not set any result 
+variables.</P>
+</FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>

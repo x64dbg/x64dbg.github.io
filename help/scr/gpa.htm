@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(93);
+  parent.nav.tree.selectNode(97);
  }else{
   setTimeout("syn()",500);
 }
@@ -90,24 +90,18 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <p><FONT face=Courier>
 <P><STRONG>gpa</STRONG><BR>Get the address of an export 
 inside a DLL.</P>
-<P class=rvps3><SPAN class=rvts11><U>arguments </U><BR>&nbsp; arg1: Export 
-name.</SPAN></P>
-<P class=rvps3><SPAN class=rvts11>[arg2]: DLL name.</SPAN></P>
+<P class=rvps3><U>arguments </U><BR>&nbsp; arg1: Export name.</P>
+<P class=rvps3>[arg2]: DLL name.</P>
 <P class=rvps3>
-<SPAN class=rvts11>
 <U >
  result
-<BR ></U></SPAN>
-
-<SPAN class=rvts9>
+<BR ></U>
 The <U>$result</U> variable is set to the 
-export address. When the export is not found, <U>$result</U>
-   will be set to 
-0.</SPAN>
-
+export address. When the export is not found, <U>$result</U> will be set to 0. 
 </P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64_dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
 
-</body>
+</body>
+</html>
