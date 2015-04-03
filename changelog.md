@@ -6,6 +6,38 @@ permalink: /changelog.html
 
 # Changelog
 
+## 2.4 alpha
+3 April 2015
+
+- resolved a crash when scrolling up in the dump
+- resolved reference view not following in disasm correctly
+- resolved losing settings
+- fixed a crash with a critical section initialized multiple times
+- added secret option to disable database compression
+- various ui improvements
+- allow 'jmp short'
+- fixed hardware breakpoints
+- disasm/dump/stack plugin menu api
+- display the number of bytes selected and the module in dump
+- added topmost option
+- fixed TLS callbacks on DLLs
+- show reference count in reference window
+- fixed possible buffer overflows
+- added a close all button in the reference view to close all tabs
+- fixed a bug with a non-refreshed memory map on start
+- report bug button
+- update hex when editing ascii/unicode in HexEditDialog
+- settings dialog now scales
+- fixed importing patches
+- thread-safe dbghelp access (could fix some crashes)
+- Yara pattern finding support
+- resolved an issue where toggling patches did not toggle the actual bytes
+- data copy dialog in various formats (C byte/word/dword/string/unicode)
+- dynamic 'Find references to' menu in disassembler (auto-detects constants)
+- added find references option to the dump (also works with a range selection)
+- show what was searched for in reference tab title
+- RegEx support in SearchListView
+
 ## 2.3 alpha
 30 December 2014
 
