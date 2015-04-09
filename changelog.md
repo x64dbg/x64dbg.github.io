@@ -162,7 +162,7 @@ permalink: /changelog.html
 - fixed hardware breakpoints (they wouldn't restore)
 - fixed function end drawing on instructions with 2 or more bytes
 - differentiate between system and attach breakpoint in options
-- check file architecture before debugging (now x32 DLLs wont load in x64_dbg)
+- check file architecture before debugging (now x32 DLLs wont load in x64dbg)
 - added option to display autocomments only on CIP
 - launcher (start launcher.exe to register shell extension)
 - thread switching + more in the threads tab
@@ -456,7 +456,7 @@ permalink: /changelog.html
 
 - fixed many, many bugs
 - added function analysis (currently manual, select some data, press SHIFT+F)
-- attach attach feature (little problems when you close x64_dbg, but works)
+- attach attach feature (little problems when you close x64dbg, but works)
 - pageup/pagedown in disassembly
 - string detection (very basic, no support for UNICODE yet)
 - ??? probably some more improvements, check BitBucket for a full changelog

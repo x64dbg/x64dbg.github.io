@@ -1,7 +1,7 @@
-x64_dbg webpage
+x64dbg webpage
 =========
 
-### description
+### Description
 
 This repository just contains the full source of the project page [x64dbg.com](http://x64dbg.com). The page is running under [Jekyll](http://jekyllrb.com/) and uses the *GitHub Flavored Markdown* for content creation.
 
