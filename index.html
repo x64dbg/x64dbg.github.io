@@ -3,32 +3,31 @@ layout: start
 title: x64dbg
 slides: yes
 ---
-
 <section class="panel start dark" data-section-name="start">
     <div class="container">
         <div class="row" style="margin-top:5%;">
             <div class="col-md-4">
                 <h1 class="title">x64dbg</h1>
                 <h1>
-                    <small>An open-source x64/x32 debugger for windows.</small>
+                <small>An open-source x64/x32 debugger for windows.</small>
                 </h1>
-				<br>
-				<h4>Latest Version: V2.4ALPHA (3 April 2015)</h4> <!-- space before .1 because of the font -->
-				<h4>MSVC2010 redistributable for <a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">x32</a> and <a href="http://www.microsoft.com/en-us/download/details.aspx?id=14632">x64</a></h4>
-				<br>
-				<p><a href="https://www.bountysource.com/teams/x64dbg?utm_source=x64dbg&utm_medium=shield&utm_campaign=raised"><img src="https://www.bountysource.com/badge/team?team_id=18188&style=raised" /></a> <a href="https://gratipay.org/x64_dbg"><img src="//img.shields.io/gratipay/x64_dbg.svg"></a></p>
+                <br>
+                <h4>Latest Version: V2.4ALPHA (3 April 2015)</h4> <!-- space before .1 because of the font -->
+                <h4><a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank">Visual C++ 2013 Redistributable</a></h4>
+                <br>
+                <p><a href="https://www.bountysource.com/teams/x64dbg?utm_source=x64dbg&utm_medium=shield&utm_campaign=raised" target="_blank"><img src="https://www.bountysource.com/badge/team?team_id=18188&style=raised" /></a> <a href="http://jenkins.x64dbg.com" target="_blank"><img src="http://jenkins.x64dbg.com/job/vs13/badge/icon"></a></p>
                 <p>
-                    <a class="btn btn-primary btn-lg blink" href="http://snapshots.x64dbg.com" target="_blank" role="button">Download &raquo;</a>
-                    <a class="btn btn-primary btn-lg" href="http://source.x64dbg.com" target="_blank" role="button">Source &raquo;</a>
-					<!-- btcdonate: https://github.com/danielquinn/bitcoin-donate -->
-					<a class="btn btn-primary btn-lg" data-btcaddress="bitcoin:1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY" href="https://blockchain.info/address/1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY" target="_blank" role="button">Bitcoin</a>
-					<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-					<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.7.0/jquery.qrcode.min.js"></script>
-					<script type="text/javascript" src="js/btcdonate.js"></script>
-					<script type="text/javascript">btcdonate();</script>
+                <a class="btn btn-primary btn-lg blink" href="http://snapshots.x64dbg.com" target="_blank" role="button">Download &raquo;</a>
+                <a class="btn btn-primary btn-lg" href="http://source.x64dbg.com" target="_blank" role="button">Source &raquo;</a>
+                <!-- btcdonate: https://github.com/danielquinn/bitcoin-donate -->
+                <a class="btn btn-primary btn-lg" data-btcaddress="bitcoin:1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY" href="https://blockchain.info/address/1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY" target="_blank" role="button">Bitcoin</a>
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.7.0/jquery.qrcode.min.js"></script>
+                <script type="text/javascript" src="js/btcdonate.js"></script>
+                <script type="text/javascript">btcdonate();</script>
                 </p>
                 <p>
-                    <a href="#features" class="scroll arrow">&nbsp;</a>
+                <a href="#features" class="scroll arrow">&nbsp;</a>
                 </p>
             </div>
             <div class="col-md-8">
@@ -37,7 +36,6 @@ slides: yes
         </div>
     </div>
 </section>
-
 <section class="panel features " data-section-name="features">
     <div class="container">
         <!-- Example row of columns -->
@@ -48,40 +46,36 @@ slides: yes
                     {% capture features %}{% include features.md %}{% endcapture %}{{ features | markdownify }}
                 </div>
             </div>
-			<!--
-            <div class="col-md-5">
-                <img src="img/x64dbg_boxshot.png" style="width:80%;height:auto; margin-top:-7%;" />
-            </div> 
-			-->
         </div>
-	</div>
+    </div>
 </section>
-
 <section class="panel overview" data-section-name="overview">
     <div class="container">
         <h2>Overview</h2>
         {% include overview.html %}
     </div>
 </section>
-
 <section class="panel plugins" data-section-name="plugins">
     <div class="container">
         <h2>Plugins</h2>
         {% include plugins.html %}
     </div>
 </section>
-
 <section class="panel credits" data-section-name="credits">
     <div class="container">
         <h2>Credits</h2>
         {% include credits.html %}
     </div>
 </section>
-
+<section class="panel donations" data-section-name="donations">
+    <div class="container">
+        <h2>Donations</h2>
+        {% include donations.html %}
+    </div>
+</section>
 <section class="panel contact" data-section-name="contact">
     <div class="container">
         <h2>Contact</h2>
         {% include contact.html %}
     </div>
 </section>
-

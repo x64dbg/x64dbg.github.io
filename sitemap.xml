@@ -1,53 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset 
-		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
->
-<url>
-    <loc>http://x64dbg.com</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/favicon.ico</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/css/custom.min.css</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/icon-white.png</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/changelog.html</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/slide1.png</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/slide2.png</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/slide3.png</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/slide4.png</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/img/slide5.png</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
-<url>
-    <loc>http://x64dbg.com/index.html</loc>
-    <lastmod>2014-08-30T22:44:52+02:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://x64dbg.com</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/favicon.ico</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/css/custom.min.css</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/icon-white.png</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/changelog.html</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/slide1.png</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/slide2.png</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/slide3.png</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/slide4.png</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/img/slide5.png</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://x64dbg.com/index.html</loc>
+        <lastmod>2014-08-30T22:44:52+02:00</lastmod>
+    </url>
 </urlset>
