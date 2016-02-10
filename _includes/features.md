@@ -11,7 +11,7 @@
 - Fully customizable color scheme
 - Dynamically recognize modules and strings
 - Import reconstructor integrated (Scylla)
-- Fast disassembler (BeaEngine)
+- Fast disassembler (capstone)
 - User database (JSON) for comments, labels, bookmarks etc.
 - Plugin support with growing API
 - Extendable, debuggable scripting language for automation
