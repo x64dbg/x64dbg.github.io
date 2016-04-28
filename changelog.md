@@ -9,7 +9,7 @@ permalink: /changelog.html
 ## Snapshot
 28 April 2016
 
-**This changelog is no longer updated**. Instead look at the [commit history](https://github.com/x64dbg/x64dbg/commits) and download the latest version [here](http://download.x64dbg.com).
+**This changelog is no longer updated**. Instead look at the [commit history](https://github.com/x64dbg/x64dbg/commits) and download the latest snapshot [here](http://snapshots.x64dbg.com).
 
 ## 2.4 alpha
 3 April 2015
