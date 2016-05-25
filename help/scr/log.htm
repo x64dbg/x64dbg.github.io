@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>not</title>
+<title>log</title>
 <meta name="GENERATOR" content="WinCHM">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(106);
+  parent.nav.tree.selectNode(126);
  }else{
   setTimeout("syn()",500);
 }
@@ -58,7 +58,7 @@ if(parent.nav.tree){
 if(parent!=self){
   setTimeout("syn()",100);
 }else{
-  parent.location.href = "../index.htm?page=not.htm";
+  parent.location.href = "../index.htm?page=log.htm";
 }
 originalOnload = window.onload;
 if(originalOnload==null){
@@ -75,24 +75,32 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <td>
 <div id="winchm_template_navigation">
 <em><FONT face=Courier>New&nbsp;Help &gt; 
-      <A href="Commands.htm">Commands</A> &gt; <A href="General_Purpose.htm">General Purpose</A> &gt; </FONT>  </em> </div>
+      <A href="Commands.htm">Commands</A> &gt; <A href="Script_Commands.htm">Script Commands</A> &gt; </FONT>  </em> </div>
 <div id="winchm_template_title"><FONT 
-      face=Courier>not</FONT>
+      face=Courier>log</FONT>
 </div>
 </td>
 <td align="right" style="WIDTH: 90px">
-<A href="neg.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="or.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+<A href="msgyn.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="Data.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
 </td>
 </tr>
 </table>
 </div>
 <div id="winchm_template_content">
 <p><FONT face=Courier>
-<P><STRONG>not</STRONG><BR>Binary NOT a 
-value.</P>
-<P class=rvps3><U>arguments </U><BR>&nbsp; arg1: Destination.</P>
-<P class=rvps3><U>result<BR></U>This command does not set any 
-result&nbsp;variables.</P></FONT></p>
+<P><STRONG>log</STRONG><BR>Put information in the log.</P>
+<P><U>arguments</U><BR>[arg1]: Format string (see down for 
+more information). When not specified, a newline will be logged.</P>
+<P>[argN]: Data for the format string.</P>
+<P><U>format string</U><BR>      
+  A format string like "Info 1: {0}, Info 2: {1}\n Info 3:{2}". In 
+place of {n} the n-th argument after the format string is inserted. You can 
+specify how to format the inserted data by prepending a format type: "{s:0}" logs 
+a string. Other types are: "d" (log as signed decimal), "u" (log 
+as unsigned decimal), "p" (log as ????????).<BR>You can print a "{" by escaping it 
+like "{{". Same for "{". "\n" inserts a newline.</P>
+<P><U>result</U><BR>This command does not set any result 
+variables.</P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>

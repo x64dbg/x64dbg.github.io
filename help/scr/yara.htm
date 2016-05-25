@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>not</title>
+<title>yara</title>
 <meta name="GENERATOR" content="WinCHM">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
@@ -48,7 +48,7 @@ window.onafterprint = d_onafterprint;
 function syn(){
 if(parent.nav.tree){
  if(parent.nav.tree.loaded){
-  parent.nav.tree.selectNode(106);
+  parent.nav.tree.selectNode(135);
  }else{
   setTimeout("syn()",500);
 }
@@ -58,7 +58,7 @@ if(parent.nav.tree){
 if(parent!=self){
   setTimeout("syn()",100);
 }else{
-  parent.location.href = "../index.htm?page=not.htm";
+  parent.location.href = "../index.htm?page=yara.htm";
 }
 originalOnload = window.onload;
 if(originalOnload==null){
@@ -75,24 +75,28 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 <td>
 <div id="winchm_template_navigation">
 <em><FONT face=Courier>New&nbsp;Help &gt; 
-      <A href="Commands.htm">Commands</A> &gt; <A href="General_Purpose.htm">General Purpose</A> &gt; </FONT>  </em> </div>
+      <A href="Commands.htm">Commands</A> &gt; <A href="Data.htm">Data</A> &gt; </FONT>  </em> </div>
 <div id="winchm_template_title"><FONT 
-      face=Courier>not</FONT>
+      face=Courier>yara</FONT>
 </div>
 </td>
 <td align="right" style="WIDTH: 90px">
-<A href="neg.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="or.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
+<A href="reffindrange_findrefrange_refrange.htm" title="Previous"><img id="winchm_template_prev" alt="Previous" src="template/btn_prev_n.gif" border="0"></a><A href="yaramod.htm" title="Next"><img id="winchm_template_next" alt="Next" src="template/btn_next_n.gif" border="0"></a>
 </td>
 </tr>
 </table>
 </div>
 <div id="winchm_template_content">
 <p><FONT face=Courier>
-<P><STRONG>not</STRONG><BR>Binary NOT a 
-value.</P>
-<P class=rvps3><U>arguments </U><BR>&nbsp; arg1: Destination.</P>
-<P class=rvps3><U>result<BR></U>This command does not set any 
-result&nbsp;variables.</P></FONT></p>
+<P><STRONG>yara<BR></STRONG>Apply Yara rules to a memory range.</P>
+<P><U>arguments</U><BR>&nbsp; arg1: Rules file to apply. 
+This should be a full path.</P>
+<P>[arg2]: Start address of the range to apply the rules to. If not specified, 
+the disassembly selection will be used.</P>
+<P>  [arg3]: Size of the range to apply the rules  to. When not specified, 
+the whole page will be used.</P>
+<P><U>result<BR></U>This command does not set any result 
+variables.</P></FONT></p>
 <hr>
   <font face="Courier" color="#808080" size="1"><A 
 href="http://x64dbg.com" target=_blank>x64dbg</A>,&nbsp;GPLv3</font>&nbsp;      </div>
