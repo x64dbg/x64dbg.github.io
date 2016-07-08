@@ -2,7 +2,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
 {% if page.slides %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.15/jquery.scrollify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.0/jquery.scrollify.min.js"></script>
 <script>
     
 function isMobile(){
@@ -48,13 +48,9 @@ $( document ).ready(function() {
     $(function() {
         
         if (!isMobile()) {
-		$(".panel").each(function(idx, elem) {
-			var newHeight = Math.max($(window).height(), $(elem).height() + 200); 
-			$(elem).css({"height": newHeight});
-		});
+	$(".panel").css({"height":$(window).height()});
 	$.scrollify({
-		section:".panel",
-		setHeights: false
+		section:".panel"
 	});
 	
 
