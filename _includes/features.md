@@ -19,7 +19,7 @@
 - Multi-datatype memory dump
 - Basic debug symbol (PDB) support
 - Dynamic stack view
-- Built-in assembler (XEDParse/Keystone)
+- Built-in assembler (XEDParse/Keystone/asmjit)
 - Executable patching
 - Yara Pattern Matching
 - Decompiler (Snowman)
