@@ -12,15 +12,15 @@
 - Fully customizable color scheme
 - Dynamically recognize modules and strings
 - Import reconstructor integrated (Scylla)
-- Fast disassembler (Capstone)
+- Fast disassembler ([Zydis](https://zydis.re))
 - User database (JSON) for comments, labels, bookmarks, etc.
 - Plugin support with growing API
 - Extendable, debuggable scripting language for automation
 - Multi-datatype memory dump
 - Basic debug symbol (PDB) support
 - Dynamic stack view
-- Built-in assembler (XEDParse/Keystone/asmjit)
+- Built-in assembler (XEDParse/[asmjit](https://github.com/asmjit))
 - Executable patching
-- Yara Pattern Matching
-- Decompiler (Snowman)
+- [Yara](https://virustotal.github.io/yara) Pattern Matching
+- Decompiler ([Snowman](https://github.com/yegord/snowman))
 - Analysis
