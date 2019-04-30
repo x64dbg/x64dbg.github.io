@@ -71,6 +71,6 @@ if(document.referrer.indexOf("adf.ly") > -1) {
 <section class="panel contact" data-section-name="contact">
     <div class="container">
         <h2>Contact</h2>
-        {% include contact.html %}
+        {% capture contact %}{% include contact.md %}{% endcapture %}{{ contact | markdownify }}
     </div>
 </section>
