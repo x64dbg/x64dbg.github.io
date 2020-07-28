@@ -8,6 +8,7 @@
 - Symbol view
 - Thread view
 - Source code view
+- Graph view
 - Content-sensitive register view
 - Fully customizable color scheme
 - Dynamically recognize modules and strings
@@ -21,6 +22,4 @@
 - Dynamic stack view
 - Built-in assembler (XEDParse/[asmjit](https://github.com/asmjit))
 - Executable patching
-- [Yara](https://virustotal.github.io/yara) Pattern Matching
-- Decompiler ([Snowman](https://github.com/yegord/snowman))
 - Analysis
