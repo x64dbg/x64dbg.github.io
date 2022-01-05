@@ -2,10 +2,7 @@
 - [![Discord](https://img.shields.io/badge/chat-on%20Discord-green.svg)](https://invite.gg/x64dbg)
 - [![Slack](https://img.shields.io/badge/chat-on%20Slack-red.svg)](https://x64dbg-slack.herokuapp.com)
 - [![Gitter](https://img.shields.io/badge/chat-on%20Gitter-lightseagreen.svg)](https://gitter.im/x64dbg/x64dbg)
-- [![Freenode](https://img.shields.io/badge/chat-%20on%20freenode-brightgreen.svg)](https://webchat.freenode.net/?channels=x64dbg)
 - [![Matrix](https://img.shields.io/badge/chat-on%20Matrix-yellowgreen.svg)](https://riot.im/app/#/room/#x64dbg:matrix.org)
-- [![XMPP](https://img.shields.io/badge/chat-%20on%20XMPP-orange.svg)](https://inverse.chat/#converse/room?jid=x64dbg@conference.jwchat.org)
-- [@x64dbg](https://twitter.com/x64dbg) on Twitter
-- [x64dbg](https://groups.google.com/group/x64dbg) on Google Groups (x64dbg \[at\] googlegroups.com)
-- [mrexodia](https://mrexodia.github.io) (mrexodia \[at\] x64dbg.com)
-- [@tr4ceflow] on Twitter
+- [![Twitter URL](https://img.shields.io/badge/tweet-%40x64dbg-1DA1F2)](https://twitter.com/x64dbg)
+- ![email](https://img.shields.io/badge/e--mail-contact%40x64dbg.com-blueviolet)
+- [![GitHub Discussions](https://img.shields.io/github/discussions/x64dbg/x64dbg)](https://github.com/x64dbg/x64dbg/discussions)

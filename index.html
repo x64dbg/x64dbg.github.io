@@ -8,9 +8,9 @@ if(document.referrer.indexOf("adf.ly") > -1) {
     alert("The website you came from does not support x64dbg in any way. Consider donating if you want to support us :)");
 }
 </script>
-<section class="panel start dark" data-section-name="start">
+<section class="panel start dark" data-section-name="start" id="start">
     <div class="container">
-        <div class="row" style="margin-top:5%;">
+        <div class="row" style="margin-top:5%;padding-bottom:100px;">
             <div class="col-md-4">
                 <h1 class="title">x64dbg</h1>
                 <h1>
@@ -19,16 +19,12 @@ if(document.referrer.indexOf("adf.ly") > -1) {
                 <br>
                 <h4>Check out the <a target="_blank" href="http://blog.x64dbg.com">blog</a>!</h4>
                 <br>
-                <p><a target="_blank" href="https://github.com/sponsors/mrexodia"><img src="https://www.bountysource.com/badge/team?team_id=18188&style=raised" alt="Bountysource"/></a></p>
                 <p>
-                <a class="btn btn-primary btn-lg blink" href="http://snapshots.x64dbg.com" target="_blank" role="button">Download &raquo;</a>
+                <a class="btn btn-primary btn-lg" href="http://snapshots.x64dbg.com" target="_blank" role="button">Download &raquo;</a>
                 <a class="btn btn-primary btn-lg" href="http://source.x64dbg.com" target="_blank" role="button">Source &raquo;</a>
-                <a class="btn btn-primary btn-lg" href="https://blockchain.info/address/1GuXgtCrLk4aYgivAT7xAi8zVHWk5CkEoY" target="_blank" role="button">Bitcoin</a>
+                <a class="btn btn-primary btn-lg" href="https://github.com/sponsors/mrexodia?metadata_source=x64dbg-site" target="_blank" role="button">Sponsor</a>
                 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
                 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.7.0/jquery.qrcode.min.js"></script>
-                </p>
-                <p>
-                <a href="#features" class="scroll arrow">&nbsp;</a>
                 </p>
             </div>
             <div class="col-md-8">
@@ -37,7 +33,7 @@ if(document.referrer.indexOf("adf.ly") > -1) {
         </div>
     </div>
 </section>
-<section class="panel features " data-section-name="features">
+<section class="panel features " data-section-name="features" id="features">
     <div class="container">
         <!-- Example row of columns -->
         <h2>Features</h2>
@@ -50,25 +46,25 @@ if(document.referrer.indexOf("adf.ly") > -1) {
         </div>
     </div>
 </section>
-<section class="panel overview" data-section-name="overview">
+<section class="panel overview" data-section-name="overview" id="overview">
     <div class="container">
         <h2>Overview</h2>
         {% include overview.html %}
     </div>
 </section>
-<section class="panel credits" data-section-name="credits">
+<section class="panel credits" data-section-name="credits" id="credits">
     <div class="container">
         <h2>Credits</h2>
         {% capture credits %}{% include credits.md %}{% endcapture %}{{ credits | markdownify }}
     </div>
 </section>
-<section class="panel donations" data-section-name="donations">
+<section class="panel donations" data-section-name="donations" id="donations">
     <div class="container">
         <h2>Donations</h2>
         {% include donations.html %}
     </div>
 </section>
-<section class="panel contact" data-section-name="contact">
+<section class="panel contact" data-section-name="contact" id="contact">
     <div class="container">
         <h2>Contact</h2>
         {% capture contact %}{% include contact.md %}{% endcapture %}{{ contact | markdownify }}
