@@ -2,7 +2,7 @@
 title: x64dbg
 description: "An open-source x64/x32 debugger for windows."
 baseurl: ""
-url: "http://www.x64dbg.com"
+url: "https://www.x64dbg.com"
 
 # Build settings
 markdown: kramdown
